@@ -67,13 +67,15 @@ MotorcycleLP
 AutoLP
 ```
 ## obj.cfg
-Just copied the tiny-yolov3.cfg files and made few changes in it
-* In line 3, set batch=24 to use 24 images for every training step
-*
+Just copied the tiny-yolov3.cfg files and made few changes in it.
+* In line 3, set `batch=24` to use 24 images for every training step.
+* In line 4, set `subdivisions=8` to subdivide the batch by 8 to speed up the training process.
+* In line 127, set `filters=(classes + 5)*3`, e.g `filter=45`.
+* In line 135, set `classes=10`, number of custom classes.
+* In line 171, set `filters=(classes + 5)*3`, e.g `filter=45`.
+* In line 177, set `classes=10`, number of custom classes.
 
-
-
-
+then,save the file
 
 
 
