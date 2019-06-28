@@ -45,16 +45,16 @@ Yolov3 needs certain specific files to know how and what to train.
 ## obj.data
 -----------
 This basically says that we are training 10 classes, what the train and validation files are and which file contains the name of object we want to detect.During training save the weight in backup folder.
-
+```
 classes = 10
 train = train.txt
 valid = test.txt
 names = obj.names
 backup = backup
-
+```
 ## obj.names
 Every new cateogry must be in new line and its category number be same what we have used at the time of annotating data.
-
+```
 Car
 Truck
 Bus
@@ -65,7 +65,7 @@ TruckLP
 BusLP
 MotorcycleLP
 AutoLP
-
+```
 ## obj.cfg
 Just copied the tiny-yolov3.cfg files and made few changes in it
 * In line 3, set batch=24 to use 24 images for every training step
