@@ -84,7 +84,7 @@ Training Loss Plot:
 For testing open the terminal and clone the repository by command 
 ```
 git clone https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection.git
-cd darknet
+cd Vehicle-and-Its-License-Plate-detection
 make
 ```  
 Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights in darknet directory.
