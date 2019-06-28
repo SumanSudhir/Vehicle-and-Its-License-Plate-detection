@@ -82,9 +82,10 @@ Training Loss Plot:
 
 # Testing
 For testing open the terminal and clone the repository by command 
-```git clone https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection.git
-   cd darknet
-  make
+```
+git clone https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection.git
+cd darknet
+make
 ```  
 Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights in darknet directory.
 Move one of your images in the testing group to the directory of Darknet and rename it as `test.jpg`
@@ -92,5 +93,6 @@ Next, open Terminal in darknet directory and run
 ```.
 ./darknet detector test obj.data cfg/obj.cfg obj_40000.weights test.jpeg
 ```
+In terminal you will see the class of object detected and resulting image will be stored in darknet directory with name prediction.jpg
 
 
