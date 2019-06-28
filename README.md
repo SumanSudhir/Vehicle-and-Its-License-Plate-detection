@@ -76,8 +76,10 @@ then,save the file
 # Training 
 I have trained tiny-yolov3 for about 40,000 iterations and get the minimum total loss 0.15 with 0.001 learning rate, 0.9 Momentum and 0.0005 decay.
 
-Here is loss plot of training: 
+Training Loss Plot:
+
 ![Loss Plot](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/lossPlot.png)
 
-
+# Testing
+For testing the result download weights from the here http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights
 
