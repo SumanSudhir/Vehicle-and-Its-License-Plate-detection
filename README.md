@@ -95,4 +95,7 @@ Next, open Terminal in darknet directory and run
 ```
 In terminal you will see the class of object detected and resulting image will be stored in darknet directory with name prediction.jpg
 
+# Some Results
+
+
 
