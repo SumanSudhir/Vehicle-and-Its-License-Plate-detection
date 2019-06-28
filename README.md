@@ -73,6 +73,9 @@ Just copied the tiny-yolov3.cfg files and made few changes in it.
 * In line 177, set `classes=10`, number of custom classes.
 
 then,save the file
+# Training 
+I have trained tiny-yolov3 for about 40,000 iterations and get the minimum total loss 0.15 with 0.001 learning rate, 0.9 Momentum and 0.0005 decay.
+Here is plot of training loss: 
 
 
 
