@@ -8,7 +8,6 @@ yolov3.weights
 *.dSYM
 *.csv
 *.out
-*.png
 *.jpg
 *.pyc
 old/
