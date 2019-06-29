@@ -102,5 +102,8 @@ In terminal you will see the class of object detected and resulting image will b
 ![Bus](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bus.jpg)
 ![Auto](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/auto.jpg)
 
-
+# References
+* For the purpose of understanding and training tiny-yolov3 on custom dataset I took help from this awesome repository            https://github.com/AlexeyAB/darknet 
+* Which is implementation of paper https://pjreddie.com/media/files/papers/YOLOv3.pdf
+* For the purpose of manually annotating the data I used the BBox-Label-Tool 
 
