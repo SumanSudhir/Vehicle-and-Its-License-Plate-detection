@@ -96,6 +96,11 @@ Next, open Terminal in darknet directory and run
 In terminal you will see the class of object detected and resulting image will be stored in darknet directory with name prediction.jpg
 
 # Some Results
+![Truck](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/truck.jpg)
+![Bike](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bike.jpg)
+![Car](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/car.jpg)
+![Bus](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bus.jpg)
+![Auto](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/auto.jpg)
 
 
 
