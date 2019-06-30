@@ -5,24 +5,24 @@ To train a model which will detect vehicle(Motorcycle, Auto-rikshaw, Bus, Car, T
 The YOLO implementations are amazing tools that can be used to start detecting common objects in images and videos. However there are many cases,when the object which we want to detect are not part of the popular dataset. In such cases we need to create our own training set and execute our own training. Vehicle and its License plate detection are one such cases. I have used tiny-yolov3 to detect the desired classes and have collected around 1700+ images for training and validation.
 
 # Dataset
-I have collected the image of vehicle of desired class from Google Image,Kaggle and by clicking some picture of vehicle from the roads so that the license plate of vehicle is visible. I have collected around 1700+ images and manually annotated all the 
+I have collected the image of vehicle of desired class from Google Image,Kaggle and by clicking some picture of vehicle from the roads so that the license plate of vehicle is visible. I have collected around 1700+ images and manually annotated all the
 desired classes in image. Each class consist of atleast 350 images in training dataset.
 Later converted the cooridnate of annotated object in yolo format that is:
 
 `<object-class> <x_center> <y_center> <width> <height>`
 
-  Where: 
+  Where:
   * `<object-class>` - integer object number from `0` to `(classes-1)`
   * `<x_center> <y_center> <width> <height>` - float values **relative** to width and height of image, it can be equal from `(0.0 to 1.0]`
   * for example: `<x> = <absolute_x> / <image_width>` or `<height> = <absolute_height> / <image_height>`
   * atention: `<x_center> <y_center>` - are center of rectangle (are not top-left corner)
- 
+
 
 | Vehicle       | Label Id      |
-| ------------- |:-------------:| 
-| Car           |       0       | 
-| Truck         |       1       | 
-| Bus           |       2       | 
+| ------------- |:-------------:|
+| Car           |       0       |
+| Truck         |       1       |
+| Bus           |       2       |
 | Motorcycle    |       3       |
 | Auto          |       4       |
 | CarLP         |       5       |
@@ -73,7 +73,7 @@ Just copied the tiny-yolov3.cfg files and made few changes in it.
 * In line 177, set `classes=10`, number of custom classes.
 
 then,save the file
-# Training 
+# Training
 I have trained tiny-yolov3 for about 40,000 iterations and get the minimum total loss 0.15 with 0.001 learning rate, 0.9 Momentum and 0.0005 decay.
 
 Training Loss Plot:
@@ -81,21 +81,18 @@ Training Loss Plot:
 ![Loss Plot](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/lossPlot.png)
 
 # Testing
-For testing open the terminal and clone the repository by command 
+For testing open the terminal and clone the repository by command
 ```
 git clone https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection.git
 cd Vehicle-and-Its-License-Plate-detection
 make
 ```  
-Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights in darknet directory.
+Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights in Vehicle-and-Its-License-Plate-detection directory.
 Move one of your images in the testing group to the directory of Darknet and rename it as `test.jpg`
-Next, open Terminal in darknet directory and run
+Next, open Terminal in Vehicle-and-Its-License-Plate-detection directory and run
 ```.
-./darknet detector test obj.data cfg/obj.cfg obj_40000.weights test.jpeg
+./darknet detector test obj.data cfg/obj.cfg obj_60000.weights test.jpg
 ```
-In terminal you will see the class of object detected and resulting image will be stored in darknet directory with name prediction.jpg
+In terminal you will see the class of object detected and resulting image will be stored in Vehicle-and-Its-License-Plate-detection directory with name prediction.jpg
 
 # Some Results
-
-
-
