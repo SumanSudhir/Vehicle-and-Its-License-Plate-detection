@@ -96,3 +96,17 @@ Next, open Terminal in Vehicle-and-Its-License-Plate-detection directory and run
 In terminal you will see the class of object detected and resulting image will be stored in Vehicle-and-Its-License-Plate-detection directory with name prediction.jpg
 
 # Some Results
+<<<<<<< HEAD
+=======
+![Truck](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/truck.jpg)
+![Bike](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bike.jpg)
+![Car](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/car.jpg)
+![Bus](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bus.jpg)
+![Auto](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/auto.jpg)
+
+# References
+* For the purpose of understanding and training tiny-yolov3 on custom dataset I took help from this awesome repository            https://github.com/AlexeyAB/darknet 
+* Which is implementation of paper https://pjreddie.com/media/files/papers/YOLOv3.pdf
+* For the purpose of manually annotating the data I used the BBox-Label-Tool 
+
+>>>>>>> 969de5f898eb7f3ecea0fbe3987579f83f38f821
