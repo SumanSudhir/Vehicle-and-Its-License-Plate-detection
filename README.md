@@ -87,7 +87,7 @@ git clone https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection
 cd Vehicle-and-Its-License-Plate-detection
 make
 ```  
-Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_40000.weights in Vehicle-and-Its-License-Plate-detection directory.
+Download weights from the link http://storage.googleapis.com/sudhir_storage/Yolov3/obj_60000.weights in Vehicle-and-Its-License-Plate-detection directory.
 Move one of your images in the testing group to the directory of Darknet and rename it as `test.jpg`
 Next, open Terminal in Vehicle-and-Its-License-Plate-detection directory and run
 ```.
@@ -96,7 +96,6 @@ Next, open Terminal in Vehicle-and-Its-License-Plate-detection directory and run
 In terminal you will see the class of object detected and resulting image will be stored in Vehicle-and-Its-License-Plate-detection directory with name prediction.jpg
 
 # Some Results
-<<<<<<< HEAD
 =======
 ![Truck](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/truck.jpg)
 ![Bike](https://github.com/SumanSudhir/Vehicle-and-Its-License-Plate-detection/blob/master/results/bike.jpg)
@@ -109,4 +108,3 @@ In terminal you will see the class of object detected and resulting image will b
 * Which is implementation of paper https://pjreddie.com/media/files/papers/YOLOv3.pdf
 * For the purpose of manually annotating the data I used the BBox-Label-Tool 
 
->>>>>>> 969de5f898eb7f3ecea0fbe3987579f83f38f821
